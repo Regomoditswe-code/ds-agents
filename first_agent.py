@@ -15,6 +15,10 @@ load_dotenv()
 os.environ["OPENAI_API_KEY"] = "dummy-not-used"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_USERNAME = "Regomoditswe-code"
+REPO_NAME = "ds-agents"
+REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{REPO_NAME}.git"
+WORK_DIR = r"C:\Users\mphel\ds-agents"
 
 from crewai import Agent, Task, Crew, LLM
 
